@@ -13,7 +13,13 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "pyright>=1.1.390",
 ]
+
+[tool.pyright]
+typeCheckingMode = "basic"  # 可选 off / basic / standard / strict
+reportGeneralTypeIssues = true
+reportArgumentType = true
 
 [tool.uv.sources]
 yufang-first-package = { path = "../packages/yufang-first-package", editable = true }
