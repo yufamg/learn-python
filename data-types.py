@@ -1,7 +1,3 @@
-import json
-import math
-
-
 intro = "Hello, World!"
 print(intro)
 
@@ -25,11 +21,17 @@ print(is_student)
 # List
 numbers = [1, 2, 3, 4, 5]
 names = [x for x in range(20) if x % 2 == 0]
+
+print(numbers[-3::-2], "++++")
+
+
 def mapnums(nums):
     print(nums)
     return nums * 2
+
+
 names = map(mapnums, names)
-print(f'{list(names)}')
+print(f"{list(names)}")
 # print(max(numbers))
 # print(min(numbers))
 # print(sum(numbers))

@@ -23,21 +23,24 @@
 #     case _:
 #         raise ValueError("Not a point")
 
-from enum import Enum
+# from enum import Enum
 
 
-class Color(Enum):
-    RED = "red"
-    GREEN = "green"
-    BLUE = "blue"
+# class Color(Enum):
+#     RED = "red"
+#     GREEN = "green"
+#     BLUE = "blue"
 
 
-color = Color(input("Enter your choice of 'red', 'blue' or 'green': "))
+# color = Color(input("Enter your choice of 'red', 'blue' or 'green': "))
 
-match color:
-    case Color.RED:
-        print("I see red!")
-    case Color.GREEN:
-        print("Grass is green")
-    case Color.BLUE:
-        print("I'm feeling the blues :(")
+# match color:
+#     case Color.RED:
+#         print("I see red!")
+#     case Color.GREEN:
+#         print("Grass is green")
+#     case Color.BLUE:
+#         print("I'm feeling the blues :(")
+arr = [{"arr": [1, 2, 3]}, {"arr": [4, 5, 6]}]
+newarr = [num for item in arr for num in item["arr"]]
+print(*newarr, sep=", ")

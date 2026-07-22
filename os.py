@@ -1,13 +1,15 @@
 # import time
-# from pathlib import Path
 import glob
 import os
 import shutil
+from pathlib import Path
 from string import Template
 
+print(os.getenv("PATH"))
 s = Template("Hello, $name! ${greeting}")
 print(s.substitute(name="World", greeting="Good morning"))
-# p = Path("write.txt")
+p = Path("write.txt")
+
 # if not p.exists():
 #     p.write_text("Hello, World!", "utf-8")
 #     print(p.read_text("utf-8"))
